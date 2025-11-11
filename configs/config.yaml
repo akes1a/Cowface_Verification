@@ -1,0 +1,30 @@
+# configs/config.yaml
+data:
+  root_path: "cowface_verification"
+  
+model:
+  feature_extractor:
+    name: "resnet50"
+    pretrained: true
+    input_size: [224, 224]
+    
+  similarity:
+    method: "cosine"
+    
+  classifier:
+    name: "logistic_regression"
+    params:
+      C: 1.0
+      class_weight: "balanced"
+      random_state: 42
+      max_iter: 1000
+
+training:
+  batch_size: 32
+  validation_ratio: 0.2
+  random_seed: 42
+  num_pairs_per_class: 1000
+
+paths:
+  models_dir: "saved_models"
+  results_dir: "results"

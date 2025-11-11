@@ -1,0 +1,11 @@
+joblib
+numpy
+pandas
+Pillow
+PyYAML
+scikit-learn
+seaborn
+torch
+torchvision
+tqdm
+matplotlib

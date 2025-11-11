@@ -1,4 +1,4 @@
-# 牛脸识别系统
+# Cowface_Verification
 
 本项目旨在通过深度学习技术实现牛脸识别，主要包括以下模块：
 - **数据加载与预处理**：从图像中提取特征。
@@ -11,6 +11,13 @@
 
 ## 环境配置
 pip install -r requirements.txt
+
+## 数据集准备
+使用以下命令下载数据集：
+
+```bash
+kaggle competitions download -c cowface-verification
+unzip cowface-verification.zip -d cowface/
 
 ## 日志记录
 在utils目录下的logger.py中配置日志记录文件路径，默认为None，日志文件将保存在logs目录下。
